@@ -13,21 +13,19 @@
 
 <body>
  <div class="login">
-	<h1>Predict Score</h1>
+	<h1>Predicting Score</h1>
 
-     <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}" method="post">
-    	  <input type="text" name="screentime" placeholder="Screen_Time" required="required" />
-        <input type="text" name="stationary" placeholder="Stationary_Time" required="required" />
-        <input type="text" name="distance" placeholder="Distance_Travelled" required="required" />
-        <input type="text" name="sleeptime" placeholder="Sleep_Time" required="required" />
-        <input type="text" name="unlocks" placeholder="Unlocks" required="required" />
+     <!-- Main Input For Receiving Query to our ML
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="experience" placeholder="Experience" required="required" />
+        <input type="text" name="test_score" placeholder="Test Score" required="required" />
+		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
-    </form>
-
+    </form> -->
+<!-- 
    <br>
-   <br>
+   <br> -->
    {{ prediction_text }}
 
  </div>
